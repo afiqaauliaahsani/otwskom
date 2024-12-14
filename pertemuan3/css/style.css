@@ -1,0 +1,77 @@
+
+body{
+    background-image: url(../image/bg1.png);
+}
+
+.kotak_putih{
+    
+    width: 800px;
+    height: 800 px;
+    /* background-color: rgba(20, 198, 157, 0.826); */
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.header{
+
+    /* color: blue; */
+    background-color: rgb(37, 222, 194);
+    padding: 20px;
+    /* justify-items: center; */
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    margin-left: -40px;
+
+}
+
+.header ul li{
+    margin-right: 30px;
+
+}
+
+.header ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #d8641b;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.header ul li a:hover{
+    background-color:rgb(216, 97, 6);
+    color: white;
+    transition: .5s;
+}
+
+.thumbnail{
+    background-image: url('../image/content2.png');
+    height: 500px;
+    background-size: cover;
+    background-position: 0 -50px;
+    border-top: 5px solid rgb(216, 97, 6);
+    border-bottom: 5px solid rgb(216, 97, 6) ;
+}
+
+.artikel{
+    margin: 20px;
+}
+
+.judul p{
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.deskripsi{
+    text-align: justify; //rata kiri kanan
+}
+
+.footer{
+    background-color: rgb(21, 127, 111);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    letter-spacing: 2px;
+}

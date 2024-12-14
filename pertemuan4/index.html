@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="login.css">
+        <style>
+          /* Menambahkan efek hover dan active */
+          /* Menambahkan efek hover dan active */
+          .navbar-nav .nav-link:hover,
+          .navbar-nav .nav-link.active {
+              background-color: #e51676; /* Warna latar belakang */
+              color: white !important; /* Pastikan warna font putih dengan !important */
+              border-radius: 5px; /* Menambahkan radius pada sudut */
+          }
+
+      </style>
+</head>
+
+<body>
+    <!-- <h1 class="fs-6 text-success ">Hello, world!</h1> -->
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-danger-subtle ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger-emphasis fs-2">BIODATAKU</a>
+
+            <div class="d-flex justify-content-between">
+                
+                <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navMenu" 
+                arial-expanded="false" arial-controls="navMenu" 
+                aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+    
+                </button>
+    
+                <div id="navMenu" class=" collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger-emphasis" aria-current="page" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger-emphasis" href="#profile">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger-emphasis" href="#softskill">SoftSkill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger-emphasis" href="#hardskill">HardSkill</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            
+
+
+        </div>
+    </nav>
+
+    <div id="login" class="kotak">
+
+      <img class="icon" src="login.png" width="100">
+      <h2 style="text-align: center; color: ;">Login ke Akun Anda</h2>
+
+      <div class="input-grup">
+          <input type="text" placeholder="Masukkan Email"> <br><br>
+
+          <input type="text" placeholder="Masukkan Password">
+
+          <div class="check-grup">
+              <div class="check">
+                  <input type="checkbox">
+                  <label> Biarkan tetap masuk</label>
+              </div>
+              <a href="">Lupa Password?</a>
+          </div>
+
+      </div>
+      <button>LOGIN</button>
+      <button>REGISTER</button>
+  </div>
+
+    <!-- Profile -->
+     <div id="profile" class="d-flex pt-5 align-items-center justify-content-around mb-5 min-vh-100">
+
+        <!-- deskripsi -->
+         <div style="width: 400px;" class="deskripsi mt-5 ms-5">
+            <h1>AFIQA AULIA AHSANI</h1>
+            <h2>Data Analyst</h2>
+
+            <p>
+                Menjadi Data Analyst tak pernah terbayangkan di pikiran saya, 
+                namun setelah masuk ke jurusan teknik informatika mau tidak mau saya harus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam corporis ullam libero fugiat? Ullam maiores ipsam voluptatibus eveniet at?
+            </p>
+
+            <button class="btn btn-outline-danger border-3 p-2 fs-6">
+                Hubungi saya...
+            </button>
+
+         </div>
+
+        <!-- gambar -->
+         <div class="foto me-5">
+            <img src="apika.jpg" class="img-fluid rounded-4 border border-danger-subtle border-4 mt-5 " width="300" alt="">
+         </div>
+     </div>
+
+     <!-- soft skill -->
+      <div id="softskill" class=" pb-3 pt-3 min-vh-100 align-items-center"> 
+        <h1 style="margin-top: 150px;" class="text-center text-danger-emphasis py-4">Softskill</h1>
+        <!-- skill -->
+         <div class="skill d-flex justify-content-around">
+          <!-- sub skill -->
+           <div class="sub-skill text-center">
+              <img src="laptop2.png" class="img-fluid" width="100">
+              <h6>Coding</h6>
+           </div>
+           <div class="sub-skill text-center">
+              <img src="laptop2.png" class="img-fluid" width="100">
+              <h6>Coding</h6>
+           </div>
+           <div class="sub-skill text-center">
+              <img src="laptop2.png" class="img-fluid" width="100">
+              <h6>Coding</h6>
+           </div>
+         </div>
+         <div class="skill d-flex justify-content-around">
+          <!-- sub skill -->
+           <div class="sub-skill text-center">
+              <img src="laptop2.png" class="img-fluid" width="100">
+              <h6>Coding</h6>
+           </div>
+           <div class="sub-skill text-center">
+              <img src="laptop2.png" class="img-fluid" width="100">
+              <h6>Coding</h6>
+           </div>
+         </div>
+      </div>
+
+      <!-- Hardskill -->
+      <div id="hardskill" style="margin-top: 200px;" class="pb-5 align-items-center"> 
+        <h1 class="text-center text-danger-emphasis py-4">Hardskill</h1>
+        <!-- skill -->
+         <div class="skill d-flex justify-content-around">
+          <!-- sub skill -->
+           <div class="sub-skill text-center">
+            <div class="card border border-danger-subtle border-4" style="width: 18rem;">
+                <img src="apika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+           </div>
+           <div class="sub-skill text-center">
+            <div class="card border border-danger-subtle border-4" style="width: 18rem;">
+                <img src="apika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  
+                </div>
+              </div>
+           </div>
+           <div class="sub-skill text-center">
+            <div class="card border border-danger-subtle border-4" style="width: 18rem;">
+                <img src="apika.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                 
+                </div>
+              </div>
+           </div>
+         </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
